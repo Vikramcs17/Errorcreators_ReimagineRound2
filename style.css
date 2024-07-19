@@ -149,15 +149,12 @@ body{
 }
 
 
-:root {
-    --bg: #090909;
+footer {
+        --bg: #090909;
     --bg-light: #24aa9444;
     --text: white;
     --hover: #ffff00;
     --light: #ffff0031;
-  }
-
-footer {
     background-color: var(--bg-light);
     line-height: 24px;
     color: var(--text)
