@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-color: rgb(28, 27, 27);
+    background-color: rgb(19, 18, 18);
 }
 
 .page1{
@@ -17,13 +17,16 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 3vw 9vw;
+    animation: appear1 5s linear;
 }
 
 .right-heading{
     line-height: 2vw;
+    margin-left: -2vw;
+    /* animation: appear1 3s linear; */
 }
 .right-heading h1{
-    font-size: 6vw;
+    font-size: 3vw;
 }
 
 .right-heading h3{
@@ -54,6 +57,9 @@ body{
     margin-right: 7vw;
     display: flex;
     justify-content: space-between;
+    animation: appear1 3s linear;
+    /* animation-timeline: view();
+    animation-range: entry 0 cover 60%; */
 }
 
 .bottom-right{
@@ -72,6 +78,7 @@ body{
     width: 100%;
     height: 50vh;
     margin-top: 10vw;
+    animation: appear 5s linear;
     /* margin-left: -20vw; */
   }
 
@@ -149,12 +156,15 @@ body{
 }
 
 
-footer {
-        --bg: #090909;
+:root {
+    --bg: #090909;
     --bg-light: #24aa9444;
     --text: white;
     --hover: #ffff00;
     --light: #ffff0031;
+  }
+
+footer {
     background-color: var(--bg-light);
     line-height: 24px;
     color: var(--text)
@@ -250,3 +260,58 @@ footer {
     color: var(--hover);
     text-transform: uppercase;
   }
+
+.bimg{
+  display: flex;
+  justify-content: space-between;
+  margin: 20vh 15vh;
+ 
+}
+
+.right-img{
+  margin-top: 24vh;
+  height: 50vh;
+  width: 30vw;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.left-img{
+  height: 90vh;
+  width: 40vw;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear{
+  from{
+     opacity: 0;
+     scale: 0.5;
+     clip-path: inset(100% 100% 0 0 );
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+    clip-path: inset(0 0 0 0 );
+  }
+}
+@keyframes appear1{
+  from{
+     opacity: 0;
+     scale: 0.5;
+     /* transform: translate(-100px); */
+     /* clip-path: inset(100% 100% 0 0 ); */
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+    /* transform: translate(0px); */
+    /* clip-path: inset(0 0 0 0 ); */
+  }
+}
+
+.page3{
+  height: 100vh;
+}
