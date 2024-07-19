@@ -384,3 +384,48 @@ height: 100vh;
 
 }
 
+.page4{
+  display: flex;
+  justify-content: space-between;
+}
+.page4 h1{
+  margin-left: 5vw;
+  font-size: 3vw;
+  color: #fff;
+}
+.page4 img{
+  width: 37vw;
+  height: 85.3vh;
+  object-fit: cover;
+}
+
+.before-after-slider{
+  position: relative;
+  width: 37vw;
+  height: 85.3vh;
+  margin-right: 15vw;
+}
+
+.img-before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  width: 50%;
+}
+.img-beforeimg{
+  object-fit: cover;
+}
+.before-line{
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: none;
+}
+
