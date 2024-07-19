@@ -463,19 +463,13 @@ height: 100vh;
 }
 
 @media only screen and (max-width: 480px){
-  /* .container {
-    width: 70vw;
-    height: 25vh;
-    margin: 0;
-    margin-bottom: 1rem; 
-  } */
-  .page3{
-    gap: 45vw;
+    .page3{
+    gap: 48vw;
   }
 .card {
-    height: 45vh;
-    width: 35vw;
-    margin-left: 5vw;
+    height: 40vh;
+    width: 40vw;
+    margin-left: 3vw;
 }
 .container:nth-child(2) {
   display: none; /* Hide the third card */
@@ -484,8 +478,8 @@ height: 100vh;
   display: none; /* Hide the third card */
 }
 .card4 {
-  height: 45vh;
-  width: 35vw;
+  height: 40vh;
+  width: 40vw;
   margin-left: -20vw;
   margin-right: 5vw;
 }
