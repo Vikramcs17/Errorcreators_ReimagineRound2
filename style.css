@@ -585,6 +585,12 @@ height: 100vh;
   font-size: 3vw;
   color: #fff;
 }
+.page4 p{
+  margin-left: 3vw;
+  color: white;
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .page4 img{
   width: 37vw;
   height: 85.3vh;
