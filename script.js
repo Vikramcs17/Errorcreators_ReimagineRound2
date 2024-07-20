@@ -22,4 +22,3 @@ beforeAfterSlider.addEventListener('mousemove',e=>{
 
 
 
-
