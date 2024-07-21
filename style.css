@@ -28,7 +28,8 @@ h1 {
 	right: 5%;
 	width: 30px;
 	height: 20px;
-  z-index: 3;
+    z-index: 1001;
+  /* z-index: 3; */
   transition: transform 0.5s ease;
 }
 
@@ -164,6 +165,7 @@ nav.show ul li a {
 nav.show {
   right: 0;
   height: 100vh;
+  z-index: 1000;
 }
 /* nav .close {
 	width: 30px;
@@ -215,7 +217,7 @@ nav h2{
     padding-bottom: 200px;
     z-index: 100;
     /* background-color: #fafafa; */
-    margin-top: 10vw;
+    margin-top: -23vw;
     margin-left: 3vw;
 }
 
@@ -224,6 +226,7 @@ nav h2{
     color: #fff;
     font-weight: 500;
     line-height: 0.8em;
+    margin-left: -14vw;
     /* letter-spacing: 5px; */
 }
 
@@ -822,6 +825,3 @@ transform: translateZ(calc(var(--index) * 10));
 @media only screen and (max-width: 480px){
 
 }
-
-
-
