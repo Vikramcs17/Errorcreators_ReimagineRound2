@@ -1,12 +1,30 @@
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
-});
+function changeVideo(name){
+    const bgVideoList = document.querySelectorAll('.bg-video')
+    const models = document.querySelectorAll('.model')
+
+    bgVideoList.forEach(video =>{
+        video.classList.remove('active')
+        if(video.classList.contains(name)){
+            video.classList.add('active')
+        }
+    })
+
+    models.forEach(model =>{
+        model.classList.remove('active')
+        if(model.classList.contains(name)){
+            model.classList.add('active')
+        }
+    })
+}
 
 const beforeAfterSlider = document.querySelector('.before-after-slider')
 const imgBefore = document.querySelector('.img-before')
