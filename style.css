@@ -1,3 +1,4 @@
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,10 +17,10 @@ body{
 
 
 
-h1 {
+/* h1 {
 	font-size: 40px;
   text-align: center;
-}
+} */
 
 .container1{
 	cursor: pointer;
@@ -188,7 +189,6 @@ nav h2{
 	font-size: 2em;
 }
 
-
 .page1{
     height: 78vh;
     width: 100%;
@@ -217,7 +217,7 @@ nav h2{
     padding-bottom: 200px;
     z-index: 100;
     /* background-color: #fafafa; */
-    margin-top: -23vw;
+    margin-top: -25vw;
     margin-left: 3vw;
 }
 
@@ -226,7 +226,6 @@ nav h2{
     color: #fff;
     font-weight: 500;
     line-height: 0.8em;
-    margin-left: -14vw;
     /* letter-spacing: 5px; */
 }
 
@@ -263,7 +262,7 @@ nav h2{
     left: 100px;
     bottom: 2vw;
     width: 30vw;
-    height: 17vh;
+    height: 23vh;
     z-index: 100;
     background: transparent;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5),
@@ -283,23 +282,164 @@ nav h2{
 .swiper {
     width: 100%;
     height: 100%;
+    color: #fff;
   }
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     /* background: #fff; */
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 8vw;
     height: 17vh;
     object-fit: cover;
   }
+
+
+
+.History-heading h1{
+  /* position: absolute; */
+  /* margin-top: 50vw; */
+  font-size: 10vw;
+  color: #fafafa;
+  font-weight: 700;
+  /* z-index: -1; */
+}
+
+.history {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+
+.line {
+  background-color: beige;
+  height: 1rem;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section.character::before {
+  content: '';
+  width: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.block {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+.history-info::before, .history-info .block {
+  /* background-color: #044544; */
+background-color: beige;
+}
+
+/* .history::before, .history .block {
+  background-color: rgb(19, 18, 18);
+} */
+
+.caption {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  width: 40%;
+  font-weight: 400;
+  color: #444;
+  font-size: 1.5vw;
+  font-family: monospace;
+ 
+  /* transform: translate(100%, 100%); */
+}
+
+.Porsche-img {
+  position: relative;
+  z-index: 10;
+  width: auto;
+  margin-bottom: 20vw;
+}
+
+.Porsche-img1 {
+  height: 100vh;
+}
+
+.Porsche-img2{
+  height: 65vh;
+  margin-top: 12vw;
+}
+
+.Porsche-img3{
+  height: 85vh;
+  margin-top: 17vw;
+}
+
+.Porsche-img4{
+  height: 140vh;
+  margin-top: -4vw;
+}
+
+.huge-text {
+  font-size: 25rem;
+  width: 100%;
+  text-align: center;
+  color: #D4AF37;
+  opacity: 0.7;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transform: translateY(100%);
+  font-weight: 700;
+}
+
+
+
+
+.quote {
+  position: absolute;
+  bottom: 7rem;
+  right: 2vw;
+  font-size: 2.5vw;
+  width: 30%;
+  text-align: right;
+  color: beige;
+
+  /* transform: translateY(200%); */
+}
+
+.quote::before, .quote::after {
+  content: '';
+  color: #fff;
+}
+
 
 .page3{
   display: flex;
