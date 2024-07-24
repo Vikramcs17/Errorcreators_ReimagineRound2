@@ -11,7 +11,8 @@ body{
   width: 100%;
  overflow-x: hidden;
   height: 100%;
-  background-color: #000;
+  background-color: #141414;
+
 }
 
 
@@ -246,7 +247,7 @@ nav h2{
   /* margin-bottom: 40px; */
 }
 .page2{
-margin-top: 20vh;
+margin-top:20vh;
 }
 
 /* .video-content a{
@@ -798,10 +799,6 @@ html {
 :root{
   --index: calc(1vw + 1vh);
   --transition: cubic-bezier(.1, .7, 0, 1);
-}
-
-body{
-  background-color: #141414;
 }
 
 .wrapper{
@@ -1464,9 +1461,15 @@ margin-top: -38vh;
   left: 3vw;
   top: 3vh;
 }
-.swiper-slide img {
+.small-img h4 {
+  font-size: 2.5vw;
+  color: #fff;
+  margin-left: 5.5vw;
+}
+.small-img img {
+  height: 20vw;
   width: 20vw;
-  height: 10vh;
+  padding: 0 2vw;
 }
   .item {
     width: calc(var(--index)* 2.1);
@@ -1510,4 +1513,42 @@ margin-top: -38vh;
   width: 1px;
   height: 53%;
 }
+.page9{
+  height: 80vh;
+}
+.swiper-slide img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  margin-left: 0vw;
+  margin-top: -1vh;  
+}
+.swiper-button-next{
+  margin-right: 0vw;
+}
+.swiper-button-prev{
+  margin-left: 0vw;
+}
+.swiper-slide h2{
+  color: #fff;
+  font-size: 6vw;
+  margin-top: -45vw;
+}
+.swiper-slide h3{
+  width: 80vw;
+  font-size: 3.5vw;
+  margin-left: 10vw;
+  /* margin-top: 2vw; */
+  font-weight:200;
+}
+.swiper-pagination-text {
+   padding-right: 0vw; 
+   font-size: 2vw;
+   margin: 0 9px;
+   top: -3vh;
+}
+.swiper-pagination-text::after{
+  width: 3vw;
+}
+
 }
