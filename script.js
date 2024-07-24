@@ -305,3 +305,12 @@ var swiper = new Swiper(".mySwiper", {
     loop: true // Set to true if you want looping behavior
   });
 
+// footer
+function scrollToTop() {
+	window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+document.querySelector(".contact-link").addEventListener("click", (e)=>{
+	e.preventDefault();
+	document.querySelector(".footer-wrapper").scrollIntoView({ behavior: "smooth" });
+});
