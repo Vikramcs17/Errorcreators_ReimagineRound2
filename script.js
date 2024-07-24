@@ -316,137 +316,186 @@ function changeVideo(name){
       document.querySelector(".footer-wrapper").scrollIntoView({ behavior: "smooth" });
   });
 
-  let elem = document.querySelectorAll(".elem")
-  let left = document.querySelector('.left')
+// PAGE 6 JS 
+
+const videoOverLay1 = document.querySelector("#video-over1");
+const tl6 = gsap.timeline({
+    scrollTrigger: {
+        trigger: videoOverLay1,
+        start: "center center",
+        end: "bottom 5%",
+        scrub: true,
+        pin: false,
+    },
+});
+tl6.to(videoOverLay1, {
+    scale: 3,
+    opacity: 0,
+});
+const videoOverLay2 = document.querySelector("#video-over2");
+const tl7 = gsap.timeline({
+    scrollTrigger: {
+        trigger: videoOverLay2,
+        start: "center center",
+        end: "bottom 5%",
+        scrub: true,
+        pin: false,
+    },
+});
+tl7.to(videoOverLay2, {
+    scale: 3,
+    opacity: 0,
+});
+const videoOverLay3 = document.querySelector("#video-over3");
+const tl8 = gsap.timeline({
+    scrollTrigger: {
+        trigger: videoOverLay3,
+        start: "center center",
+        end: "bottom 5%",
+        scrub: true,
+        pin: false,
+    },
+});
+tl8.to(videoOverLay3, {
+    scale: 3,
+   opacity:0,
+});
+
+
+
+//   let elem = document.querySelectorAll(".elem")
+//   let left = document.querySelector('.left')
   
-  elem.forEach(function (e) {
-      e.addEventListener("mouseenter", function (dets) {
-          gsap.to(this.querySelector('.picture'), {
-              opacity: 1,
-              scale: 1
-          })
-          let data = e.getAttribute('data-image')
-          left.style.backgroundImage = url(${data})
+//   elem.forEach(function (e) {
+//       e.addEventListener("mouseenter", function (dets) {
+//           gsap.to(this.querySelector('.picture'), {
+//               opacity: 1,
+//               scale: 1
+//           })
+//           let data = e.getAttribute('data-image')
+//           left.style.backgroundImage = url(${data})
   
-      })
-      e.addEventListener("mouseleave", function (dets) {
-          gsap.to(this.querySelector('.picture'), {
-              opacity: 0,
-              scale: 0
-          })
-      })
-      e.addEventListener("mousemove", function (dets) {
-          gsap.to(this.querySelector('.picture'), {
-              x: gsap.utils.mapRange(0, window.innerWidth, -500, 300, dets.clientX),
-              y: gsap.utils.mapRange(0, window.innerHeight, -50, 100, dets.clientY),
-              opacity: 1,
-              scale: 1
-          })
-          left.style.backgroundImage = url(${data})
+//       })
+//       e.addEventListener("mouseleave", function (dets) {
+//           gsap.to(this.querySelector('.picture'), {
+//               opacity: 0,
+//               scale: 0
+//           })
+//       })
+//       e.addEventListener("mousemove", function (dets) {
+//           gsap.to(this.querySelector('.picture'), {
+//               x: gsap.utils.mapRange(0, window.innerWidth, -500, 300, dets.clientX),
+//               y: gsap.utils.mapRange(0, window.innerHeight, -50, 100, dets.clientY),
+//               opacity: 1,
+//               scale: 1
+//           })
+//           left.style.backgroundImage = url(${data})
   
-      })
-  })
-  let tl = gsap.timeline({
-      delay: .3
-  })
-  tl.from(".footer h1 span", {
-      opacity: 0,
-      stagger: .2,
-      duration: .5,
-  })
-  tl.from('.footer h3', {
-      x: 40,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2
-  })
-  tl.from(".page-1", {
-      opacity: 0,
-      ease: Power4
-  })
+//       })
+//   })
+//   let tl = gsap.timeline({
+//       delay: .3
+//   })
+//   tl.from(".footer h1 span", {
+//       opacity: 0,
+//       stagger: .2,
+//       duration: .5,
+//   })
+//   tl.from('.footer h3', {
+//       x: 40,
+//       opacity: 0,
+//       duration: 1,
+//       stagger: 0.2
+//   })
+//   tl.from(".page-1", {
+//       opacity: 0,
+//       ease: Power4
+//   })
   
-  tl.from(".navbar", {
-      y: -400
-  })
+//   tl.from(".navbar", {
+//       y: -400
+//   })
   
-  tl.from(".lists h4:nth-child(odd)", {
-      y: 400,
-      stagger: .3,
-      duration: .7
-  }, 'a')
-  tl.from(".lists h4:nth-child(even)", {
-      y: -400,
-      stagger: .3,
-      duration: .7
-  }, 'a')
+//   tl.from(".lists h4:nth-child(odd)", {
+//       y: 400,
+//       stagger: .3,
+//       duration: .7
+//   }, 'a')
+//   tl.from(".lists h4:nth-child(even)", {
+//       y: -400,
+//       stagger: .3,
+//       duration: .7
+//   }, 'a')
   
-  tl.from(".heading h1 span", {
-      opacity: 0,
-      stagger: .2,
-      duration: .5,
-  }, 'c')
-  tl.from(".side-text h1 span", {
-      opacity: 0,
-      stagger: .2,
-      duration: .5,
-  }, 'c')
-  tl.from(".page-1 h3:nth-child(odd)", {
-      y: 400,
-      stagger: .3,
-      duration: .5
-  }, 'b')
-  tl.from(".page-1 h3:nth-child(even)", {
-      y: -400,
-      stagger: .3,
-      duration: .5
-  }, 'b')
-  tl.to(".page-1 button", {
-      opacity: 1,
-      duration: .5
-  })
-  tl.from(".absolute", {
-      x: 550,
-      duration: .3
-  })
-  let video = document.querySelector('.video video')
-  gsap.to(video, {
-      scrollTrigger: {
-          trigger: video,
-          start: '5% top',
-          end: 'bottom top',
-          scrub: 1
-      },
-      onStart: () => {
-          video.play()
-      }
-  })
-  gsap.to('.video', {
-      scrollTrigger: {
-          trigger: '.video',
-          start: '3% top',
-          end: 'bottom top',
-          scrub: 1,
-          pin: true
-      },
-  })
-  gsap.from(".back h1", {
-      scrollTrigger: {
-          trigger: ".back h1",
-          start: "top 40%",
-          end: "bottom 80%",
-          scrub: 1,
-      },
-      y: 200,
-      stagger: .3,
-      duration: .3
-  })
-  gsap.to(".front", {
-      scrollTrigger: {
-          trigger: ".page-4",
-          start: "80% top",
-          end: "top top",
-          scrub: 1,
-      },
-      left: 0,
-      duration: .2,
-  })
+//   tl.from(".heading h1 span", {
+//       opacity: 0,
+//       stagger: .2,
+//       duration: .5,
+//   }, 'c')
+//   tl.from(".side-text h1 span", {
+//       opacity: 0,
+//       stagger: .2,
+//       duration: .5,
+//   }, 'c')
+//   tl.from(".page-1 h3:nth-child(odd)", {
+//       y: 400,
+//       stagger: .3,
+//       duration: .5
+//   }, 'b')
+//   tl.from(".page-1 h3:nth-child(even)", {
+//       y: -400,
+//       stagger: .3,
+//       duration: .5
+//   }, 'b')
+//   tl.to(".page-1 button", {
+//       opacity: 1,
+//       duration: .5
+//   })
+//   tl.from(".absolute", {
+//       x: 550,
+//       duration: .3
+//   })
+//   let video = document.querySelector('.video video')
+//   gsap.to(video, {
+//       scrollTrigger: {
+//           trigger: video,
+//           start: '5% top',
+//           end: 'bottom top',
+//           scrub: 1
+//       },
+//       onStart: () => {
+//           video.play()
+//       }
+//   })
+//   gsap.to('.video', {
+//       scrollTrigger: {
+//           trigger: '.video',
+//           start: '3% top',
+//           end: 'bottom top',
+//           scrub: 1,
+//           pin: true
+//       },
+//   })
+//   gsap.from(".back h1", {
+//       scrollTrigger: {
+//           trigger: ".back h1",
+//           start: "top 40%",
+//           end: "bottom 80%",
+//           scrub: 1,
+//       },
+//       y: 200,
+//       stagger: .3,
+//       duration: .3
+//   })
+//   gsap.to(".front", {
+//       scrollTrigger: {
+//           trigger: ".page-4",
+//           start: "80% top",
+//           end: "top top",
+//           scrub: 1,
+//       },
+//       left: 0,
+//       duration: .2,
+//   })
+
+
