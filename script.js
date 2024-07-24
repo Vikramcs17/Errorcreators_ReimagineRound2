@@ -1,12 +1,4 @@
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
 function changeVideo(name){
   const bgVideoList = document.querySelectorAll('.bg-video')
@@ -280,4 +272,36 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 })
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        // Adjust to show pagination for up to 6 slides
+        var titles = [
+          "DYNAMIC DRIVING",
+          "TRANSMISSIONS",
+          "SUSPENSION",
+          "STEERING",
+          "BRAKES",
+          "EXHAUST"
+        ];
+        // Only render bullets for the first 6 slides
+        if (index < 6) {
+          return '<span class="' + className + ' swiper-pagination-text">' + titles[index] + '</span>';
+        } else {
+          return ''; // Do not render pagination for slides beyond the 6th
+        }
+      },
+      bulletClass: 'swiper-pagination-text',
+      bulletActiveClass: 'swiper-pagination-text-active'
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1, // Adjust this as needed
+    loop: true // Set to true if you want looping behavior
+  });
 
