@@ -1787,5 +1787,8 @@ footer .social {
   font-size: 4vw;
 }
 
+.page2{
+  display: none;
+}
 
 }
