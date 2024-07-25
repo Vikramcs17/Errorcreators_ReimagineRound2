@@ -10,8 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   menuClose.addEventListener('click', function() {
+      console.log('Close button clicked'); // Debugging log
       navContainer.classList.remove('show');
       page1.classList.remove('hidden'); // Show video
+      console.log("hello")
   });
 
   function changeVideo(name) {
@@ -36,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Expose changeVideo function to global scope
   window.changeVideo = changeVideo;
 });
-
 const beforeAfterSlider = document.querySelector('.before-after-slider')
 const imgBefore = document.querySelector('.img-before')
 const line = document.querySelector('.before-line')
