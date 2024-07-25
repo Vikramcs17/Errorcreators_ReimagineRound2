@@ -190,6 +190,8 @@ h1{
   position: relative;
   padding-top: 60px; /* Adjust based on navbar height */
   z-index: 1; /* Behind the navbar */
+    font-family: "Racing Sans One", sans-serif;
+
 }
 
 .bg-video {
