@@ -415,7 +415,9 @@ background-color: beige;
   font-size: 2.5vw;
   width: 30%;
   text-align: right;
-  color: black;
+  color: rgb(43, 42, 42);
+  font-family: "Racing Sans One", sans-serif;
+
 
   /* transform: translateY(200%); */
 }
@@ -430,6 +432,7 @@ background-color: beige;
   background: #000;
   display: flex;
   justify-content: space-evenly;
+  color: #fff;
   /* animation: appear linear; */
   /* animation-timeline: view(); */
   /* animation-range: entry 0 cover 40%; */
@@ -512,6 +515,15 @@ background-color: beige;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.back h1{
+  font-size: 3vw;
+}
+
+.back p{
+  font-size: 1.5vw;
+  margin-top: 2vw;
 }
 
 
@@ -657,6 +669,8 @@ height: 100vh;
 
 .page6{
     background-color: #000;
+    font-family: "Racing Sans One", sans-serif;
+
 }
 .cardy {
   /* background-color: red; */
@@ -887,7 +901,7 @@ transform: translateZ(calc(var(--index) * 10));
 /* page9 */
 
 .page9{
-  height: 110vh;
+  height: 120vh;
   width: 100%;
   margin-bottom: 100vh;
   margin-top: -2vh;
@@ -917,6 +931,12 @@ transform: translateZ(calc(var(--index) * 10));
   object-fit: cover;
 }
 
+.swiper-slide h1{
+  color: #bbc5c4;
+  margin-left: -75vw;
+  font-size: 3vw;
+  margin-top: 4vw;
+}
 .swiper-slide h2{
   color: #fff;
   font-size: 2.5vw;
@@ -946,7 +966,7 @@ transform: translateZ(calc(var(--index) * 10));
   margin: 0 10px;
   position: relative;
   padding-right: 5vw; 
-  margin-bottom: 4vw;
+  margin-bottom: 3vw;
   font-family: "Racing Sans One", sans-serif;
 }
 
@@ -1034,6 +1054,7 @@ footer {
   bottom: 0;
   z-index: -100;
   color: #fff;
+  font-family: "Racing Sans One", sans-serif;
   
 }
 .footer-wrapper {
@@ -1064,7 +1085,7 @@ footer {
 	top: -1%;
 	font-weight: 400;
 	color: #e3e9e8;
-	font-family: NeueRoman;
+	/* font-family: NeueRoman; */
 }
 
 .header-top p {
@@ -1112,7 +1133,7 @@ footer {
 	padding-bottom: 0.4vw;
 	border-bottom: 1px solid white;
 	color: white;
-	font-family: aeonik;
+	/* font-family: aeonik; */
 	width: fit-content;
   margin: 5px;
 }
@@ -1148,7 +1169,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	font-family: grotesk2;
+	/* font-family: grotesk2; */
   margin: 5px;
 }
 
@@ -1383,129 +1404,6 @@ footer {
   width: 20%;
 }
 
-
-/* 
-.main-page8 {
-  width: 100vw;
-  height: 100%;
-  background-color: #fafafa;
-}
-
-.main-page8 .page-8 {
-  width: calc(100% - 2rem);
-  height: 200vh;
-  display: flex;
-  align-items: start;
-  padding: 1vw;
-  gap: 1vw;
-  background-color: white;
-
-}
-
-.main-page8 .left {
-  position: sticky;
-  top: 5%;
-  margin-top: 2rem;
-  width: 100%;
-  height: 90vh;
-  border-radius: 10px;
-  background-image: url(Images/card-bg-1.jpg);
-  background-size: cover;
-
-  cursor: pointer;
-}
-
-.main-page8 .container {
-  width: 100%;
-}
-
-.main-page8 .right {
-  width: 100%;
-  height: 100vh;
-}
-
-.main-page8 .page-1-bottom {
-  clip-path: polygon(91% 0, 100% 100%, 0 99%, 0 0);
-  position: absolute;
-  background-color: black;
-  width: 40%;
-  height: 8vh;
-  bottom: -1%;
-  left: 0;
-}
-
-.main-page8 .desc {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 2vw;
-  margin: 2rem 0;
-  align-items: end;
-}
-
-.main-page8 .side-img {
-  width: 10vw;
-  height: 5vw;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.main-page8 .side-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-
-.main-page8 .desc h1 {
-  text-align: right;
-  font-family: font-1;
-  font-size: 4vw;
-  text-transform: capitalize;
-}
-
-.main-page8 .elem {
-  width: 100%;
-  height: calc(100% / 6);
-  border-top: 3px solid rgba(0, 0, 0, 0.267);
-  margin-bottom: .5rem;
-  position: relative;
-  transition: all ease 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: font-3;
-  z-index: 9000;
-}
-
-.main-page8 .elem:hover {
-  border-top: 3px solid black;
-
-}
-
-.main-page8 .elem h1 {
-  text-transform: capitalize;
-}
-
-.main-page8 .picture {
-  position: absolute;
-  width: 10vw;
-  height: 10vw;
-  border-radius: 50%;
-  opacity: 0;
-  scale: 0;
-  overflow: hidden;
-  z-index: 10000;
-}
-
-.main-page8 .picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-/* responsive */
 @media only screen and (max-width: 1465px){
     
 }
