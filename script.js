@@ -498,27 +498,3 @@ tl8.to(videoOverLay3, {
 //       duration: .2,
 //   })
 
-// Get all elements with the class .text-rolling
-const textRollingElements = document.querySelectorAll('.text-rolling');
-
-// Loop through each element
-textRollingElements.forEach((element) => {
-  // Get the text content of the element
-  const text = element.textContent;
-
-  // Create a span element to wrap the text
-  const span = document.createElement('a');
-  span.textContent = text;
-  element.innerHTML = '';
-  element.appendChild(span);
-
-  // Set up the animation on hover
-  element.addEventListener('mouseenter', () => {
-    gsap.to(span, {
-      duration: 1,
-      rotateY: '360deg',
-      ease: 'power2.inOut',
-      transformOrigin: 'center',
-    });
-  });
-});
