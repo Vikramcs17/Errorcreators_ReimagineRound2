@@ -411,7 +411,7 @@ background-color: beige;
   font-size: 2.5vw;
   width: 30%;
   text-align: right;
-  color: beige;
+  color: black;
 
   /* transform: translateY(200%); */
 }
@@ -1497,13 +1497,80 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
+  .video-content {
+    margin-top: -45vh;
+  }
+  .gallery {
+    width: 80vw;
+    height: auto;
+    left: 4vw;
+  }
+  .small-img img {
+    object-fit: cover;
+    height: 18vw;
+    width: 19vw;
+  }
+  .small-img h4 {
+    font-size: 3vw;
+  }
+  .video-content h1 {
+    font-size: 12vw;
+  }
+  .video-content .model {
+    font-size: 6vw;
+  }
+  .video-content p {
+    font-size: 1.5vw;
+  }
+
+  .caption {
+    font-size: 2.5vw;
+  }
+  
+.Porsche-img1 {
+  height: 85vh;
+}
+
+  .Porsche-img2 {
+    height: 45vh;
+  }
+  .Porsche-img3 {
+    height: 75vh;
+  }
+  .Porsche-img4 {
+    height: 115vh;
+  }
+  .huge-text {
+    font-size: 12rem;
+  }
 
   .page3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 130vh;
+    height: 150vh;
   }
+  .page4 h1 {
+    /* margin-left: 5vw; */
+    font-size: 7vw;
+    text-align: center;
+  }
+  .page4 p {
+    margin-top: 6vh;
+    max-width: 40ch;
+    letter-spacing: 3px;
+    margin-left: 5vw;
+    color: white;
+    font-size: 2.2vw;
+  }
+.page4 img {
+    width: 40vw;
+    height: 50vh;
+}
+.before-line {
+  width: 1px;
+  height: 59%;
+}
 
   .container {
     width: 45vw;
@@ -1520,6 +1587,91 @@ footer {
   .item {
     width: calc(var(--index)* 3.2);
   }
+
+  .wrapper {
+    margin-top: -45vh;
+  }
+  
+.marquee1 {
+  height: 10vh;
+}
+.marquee2 {
+  height: 10vh;
+}
+
+
+  .swiper-slide img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin-left: 0vw;
+    margin-top: -1vh;  
+  }
+  .swiper-button-next{
+    margin-right: 0vw;
+  }
+  .swiper-button-prev{
+    margin-left: 0vw;
+  }
+  .swiper-slide h2{
+    color: #fff;
+    font-size: 6vw;
+    margin-top: -45vw;
+  }
+  .swiper-slide h3{
+    width: 80vw;
+    font-size: 3.5vw;
+    margin-left: 10vw;
+    /* margin-top: 2vw; */
+    font-weight:200;
+  }
+  .swiper-pagination-text {
+     padding-right: 0vw; 
+     font-size: 2vw;
+     margin: 0 9px;
+     top: -3vh;
+  }
+  .swiper-pagination-text::after{
+    width: 3vw;
+  }
+  .page9{
+    height: 80vh;
+    margin-bottom: 60vh;
+  }
+  .logoo img {
+    position: absolute;
+    height: 9vh;
+    top: 4vh;
+    left: -3vw;
+    z-index: 1000;
+}
+.menu-open {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  font-size: 5vh;
+}
+.menu__item {
+  position: relative;
+  padding: 6vw;
+}
+.menu__item-img {
+height: 8vh;
+}
+.menu__item-link, .marquee span {
+font-size: 10vw;
+margin-top: 3vh;
+}
+.socials {
+display: flex;
+margin: 38px -1px;
+font-size: 4.5vw;
+}
+.menu-close {
+font-size: 12vw;
+}
 }
 
 
