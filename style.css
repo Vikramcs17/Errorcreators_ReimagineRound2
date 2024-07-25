@@ -974,6 +974,7 @@ transform: translateZ(calc(var(--index) * 10));
   padding-right: 5vw; 
   margin-bottom: 3vw;
   font-family: "Racing Sans One", sans-serif;
+  cursor: pointer;
 }
 
 .swiper-pagination-text::after {
