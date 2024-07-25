@@ -258,6 +258,15 @@ body{
   margin-left: 1.5vw;
 }
 
+.page2{
+  background: #000;
+  /* display: none; */
+}
+
+.page2-mob{
+  display: none;
+}
+
 .History-heading{
     background-color: #000;
 }
@@ -1731,5 +1740,52 @@ footer .social {
 .marquee2 {
   height: 10vh;
 }
+
+.page2-mob{
+  height: 200vh;
+  display: block;
+  background-color: #000000;
+  padding-top: 10vw;
+  color: #000000;
+}
+
+.resp-card{
+  display: flex;
+  padding-bottom: 10vw;
+  /* justify-content: space-between; */
+}
+
+.respcard{
+  height: 20vh;
+  width: 90vw;
+  margin-left: 3vw;
+  background: rgb(164, 164, 127);
+  clip-path: polygon(0 0,90% 0, 100% 100%,10% 100%);
+}
+
+.img-resp{
+  height: 20vh;
+  width: 50vw;
+  margin-left: -15.2vw;
+  clip-path: polygon(0 0,70% 0, 100% 100%,33% 100%);
+}
+
+.img-resp img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.respcard h1{
+  /* margin-left: 4vw; */
+  padding: 5vw;
+}
+
+.respcard h3{
+  margin-left: 5vw;
+  padding: 5vw;
+  font-size: 4vw;
+}
+
 
 }
