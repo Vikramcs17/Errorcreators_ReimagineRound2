@@ -1,5 +1,4 @@
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -14,14 +13,11 @@ body{
   height: 100%;
   background-color: #141414;
   font-family: "Raleway", sans-serif;
-  
-
 }
 
 h1{
   font-family: "Racing Sans One", sans-serif;
 }
-
 
 
 #loader{
@@ -516,22 +512,6 @@ background-color: beige;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #bbc5c4;
-}
-
-.back h1{
-  font-size: 3.5vw;
-}
-
-.back p{
-  margin-top: 2vw;
-  font-size: 1.5vw;
-}
-
-
-.back4 p{
-  margin-top: 2vw;
-  font-size: 1.3vw;
 }
 
 
@@ -585,7 +565,7 @@ height: 100vh;
   /* margin-left: 3vw; */
   color: white;
   font-size: 2vw;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
   text-align:justify;
   
 }
@@ -683,7 +663,7 @@ height: 100vh;
   position: sticky;
   color: white;
   top: 4%;
-  
+  padding-top: 10vh;
 
 }
 
@@ -902,14 +882,14 @@ transform: translateZ(calc(var(--index) * 10));
     }
 }
 
-/* RESPONSIVE  */
+
 
 /* page9 */
 
 .page9{
   height: 110vh;
   width: 100%;
-  margin-bottom: 600px;
+  margin-bottom: 100vh;
   margin-top: -2vh;
 }
 
@@ -1047,7 +1027,7 @@ transform: translateZ(calc(var(--index) * 10));
 
 footer {
   width: 100%;
-  height: 670px;
+  height: 100vh;
   background: #050505;
   position: fixed;
   left: 0;
@@ -1160,7 +1140,8 @@ footer {
 #middle-footer {
 	margin-top: 4vw;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+  gap: 40vw;
 }
 
 #middle-footer .section1 {
@@ -1234,15 +1215,17 @@ footer {
 .social {
 	display: flex;
   gap: 1.5vw;
+  margin-left: 67vw;
+  margin-top: 7vh;
 }
 
 .middle-footer2 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 7vw;
+	/* padding-top: 7vw; */
   margin-top: -11vh;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .middle-footer2 p {
@@ -1250,18 +1233,21 @@ footer {
 	font-weight: 600;
 }
 .middle-footer2 .img1 {
-	height: 72px;
-	width: 72px;
-	overflow: hidden;
+	height:90px;
+	width: 97px;
+	overflow: visible;
 }
 .middle-footer2 .img1 img {
 	width: 80%;
-	height: 100%;
+  margin-left: 4vw;
+	height: 120%;
 	object-fit: cover;
 	object-position: center;
+  margin-top: 0vh;
 }
 .middle-footer2 .middle-text {
 	font-weight: 400;
+  display: none;
 	color: #bbc5c4;
 	font-size: 1.6vw;
 	font-family: aeonik;
@@ -1271,10 +1257,11 @@ footer {
 .middle-footer2 p {
 	margin-top: 20px;
 	font-family: NeueRoman;
+  display: none;
 }
 
 .scrolling-text-container-footer {
-	margin-top: -1vw;
+	margin-top: 0vw;
 	width: 100%;
 	overflow: hidden;
 	white-space: nowrap;
@@ -1518,7 +1505,7 @@ footer {
   height: 100%;
   object-fit: cover;
 } */
-
+/* responsive */
 @media only screen and (max-width: 1465px){
     
 }
@@ -1699,6 +1686,38 @@ font-size: 4.5vw;
 .menu-close {
 font-size: 12vw;
 }
+
+footer{
+  height: 60vh;
+}
+.header-top p {
+  font-size: 5.3vw;
+}
+.header-top a {
+  /* text-decoration: underline; */
+  font-size: 2.87vw;
+}
+#middle-footer {
+  margin-top: 4vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 7vw;
+}
+.social {
+  display: flex;
+  gap: 1.5vw;
+  margin-left: 45vw;
+  margin-top: 4vh;
+}
+
+.middle-footer2 .img1 img{
+margin-top: 5vh;
+}
+
+.scrolling-text-container-footer {
+  margin-top: 7vh;
+}
+
 }
 
 
@@ -1709,6 +1728,17 @@ font-size: 12vw;
 }
 
 @media only screen and (max-width: 480px) {
+  .menu-open {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 50px;
+    font-size: 3vh;
+}
+.menu {
+  padding: 20vh 0 25vh;
+}
   .menu__item {
     position: relative;
     padding: 6vw;
@@ -1717,8 +1747,13 @@ font-size: 12vw;
   height: 8vh;
 }
 .menu__item-link, .marquee span {
-  font-size: 15vw;
+  font-size: 12vw;
   margin-top: 3vh;
+}
+.menu-close {
+  font-size: 12vw;
+  top: 10vh;
+  right: 0vw;
 }
 .socials {
   display: flex;
@@ -1812,7 +1847,7 @@ margin-top: -32vh;
   margin-left: 3vw;
 }
 .page4{
-  height: 61vh;
+  height: 90vh;
 }
 .before-line {
   width: 1px;
@@ -1916,11 +1951,7 @@ footer .social {
   overflow:visible;
 }
 
-.middle-footer2 .img1 img {
-    position: relative;
-    top: 2vw;
-    left: 85vw;
-}
+
 .header-top p {
   font-size: 5.5vw;
 }
@@ -1984,10 +2015,11 @@ footer .social {
 
 .logoo img{
   position: absolute;
-  height: 10vw;
+  height: 15vw;
   top: 8vw;
-  left: 2vw;
+  left: 0vw;
   z-index: 1000;
+
 }
 
 }
