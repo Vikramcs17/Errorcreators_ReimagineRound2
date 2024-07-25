@@ -1,24 +1,41 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const menuOpen = document.querySelector('.menu-open');
+  const menuClose = document.querySelector('.menu-close');
+  const navContainer = document.querySelector('.nav-container');
+  const page1 = document.querySelector('.page1');
 
+  menuOpen.addEventListener('click', function() {
+      navContainer.classList.add('show');
+      page1.classList.add('hidden'); // Hide video behind navbar
+  });
 
+  menuClose.addEventListener('click', function() {
+      navContainer.classList.remove('show');
+      page1.classList.remove('hidden'); // Show video
+  });
 
-function changeVideo(name){
-  const bgVideoList = document.querySelectorAll('.bg-video')
-  const models = document.querySelectorAll('.model')
+  function changeVideo(name) {
+      const bgVideoList = document.querySelectorAll('.bg-video');
+      const models = document.querySelectorAll('.model');
 
-  bgVideoList.forEach(video =>{
-      video.classList.remove('active')
-      if(video.classList.contains(name)){
-          video.classList.add('active')
-      }
-  })
+      bgVideoList.forEach(video => {
+          video.classList.remove('active');
+          if (video.classList.contains(name)) {
+              video.classList.add('active');
+          }
+      });
 
-  models.forEach(model =>{
-      model.classList.remove('active')
-      if(model.classList.contains(name)){
-          model.classList.add('active')
-      }
-  })
-}
+      models.forEach(model => {
+          model.classList.remove('active');
+          if (model.classList.contains(name)) {
+              model.classList.add('active');
+          }
+      });
+  }
+
+  // Expose changeVideo function to global scope
+  window.changeVideo = changeVideo;
+});
 
 const beforeAfterSlider = document.querySelector('.before-after-slider')
 const imgBefore = document.querySelector('.img-before')
@@ -30,19 +47,6 @@ line.style.left =`${e.layerX}px`
 
 })
 
-const container = document.querySelector('.container1');
-const nav = document.querySelector('nav');
-var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
-
-container.addEventListener('click', () => {
-  if (nav.classList.contains('show')) {
-      nav.classList.remove('show');
-      container.classList.remove('hide');
-  } else {
-      nav.classList.add('show');
-      container.classList.add('hide');
-  }
-});
 
 const blobCursor = (() => {  
 const cursor = document.querySelector('#cursorBlob');
