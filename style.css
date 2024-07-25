@@ -30,6 +30,18 @@ body{
   
   }
 
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoo img{
+  position: absolute;
+  height: 4vw;
+  top: 2vw;
+  left: 2vw;
+  z-index: 1000;
+}
 
 .menu-open {
   color: #fff;
@@ -1742,7 +1754,7 @@ footer .social {
 }
 
 .page2-mob{
-  height: 200vh;
+  height: 110vh;
   display: block;
   background-color: #000000;
   padding-top: 10vw;
