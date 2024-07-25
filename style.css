@@ -16,6 +16,20 @@ body{
 
 }
 
+#loader{
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    position: fixed;
+    background: #000  ;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
 
 .menu-open {
   color: #fff;
@@ -244,7 +258,9 @@ body{
   margin-left: 1.5vw;
 }
 
-
+.History-heading{
+    background-color: #000;
+}
 
 .History-heading h1{
   /* position: absolute; */
@@ -394,6 +410,7 @@ background-color: beige;
   /* animation-range: entry 0 cover 40%; */
 }
 .container {
+    padding-top: 15vh;
   width: 20vw;
   height: 50vh;
   perspective: 800px;
@@ -613,11 +630,16 @@ height: 100vh;
 
 /* section 3 code */
 
+.page6{
+    background-color: #000;
+}
 .cardy {
   /* background-color: red; */
   position: sticky;
   color: white;
-  top: 0%;
+  top: 4%;
+  padding-top: 10vh;
+
 }
 
 .centerfirst {
@@ -759,7 +781,6 @@ transform: translateZ(calc(var(--index) * 10));
 
 
 /* page7 */
-
 
 .marquee1 {
   display: flex;
@@ -1711,4 +1732,3 @@ footer .social {
 }
 
 }
-
