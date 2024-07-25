@@ -1795,12 +1795,20 @@ footer .social {
 
 .respcard h3{
   margin-left: 5vw;
-  padding: 5vw;
+  padding: 3vw;
   font-size: 4vw;
 }
 
 .page2{
   display: none;
+}
+
+.logoo img{
+  position: absolute;
+  height: 10vw;
+  top: 8vw;
+  left: 2vw;
+  z-index: 1000;
 }
 
 }
