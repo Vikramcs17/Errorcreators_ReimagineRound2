@@ -585,7 +585,7 @@ background-color: beige;
 
 .quote::before, .quote::after {
   content: '';
-  color: #fff;
+  color: black;
 }
 
 
@@ -593,9 +593,9 @@ background-color: beige;
   background: #000;
   display: flex;
   justify-content: space-evenly;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  /* animation: appear linear; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0 cover 40%; */
 }
 .container {
   width: 20vw;
@@ -1740,4 +1740,96 @@ footer .social {
 }
 }
 
+.main1 {
+  position: relative;
+  z-index: 100;
+  background-color: #040101;
+  padding-bottom: 100vh;
+  width: 100%;
+  height: 100vh;
+}
 
+.main1 .page-8 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main1 .page-8 h1 {
+  color: #fff;
+  font-family: font-2;
+  font-size: 3vw;
+  margin: 2rem;
+}
+
+.main1 .swiper {
+  width: 90%;
+  height: 80%;
+}
+
+.main1 .swiper-slide {
+  position: relative;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main1 .clip {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.815);
+  clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.main1 .clip h1 {
+  position: absolute;
+  top: 70%;
+  font-family: font-3;
+  font-size: 1vw;
+  color: white;
+}
+
+.main1 .swiper-slide:hover .clip {
+  opacity: 1;
+}
+
+.main1 .swiper-slide:hover img {
+  opacity: .6;
+}
+
+.main1 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: all ease 0.5s;
+}
+
+.main1 .swiper-slide {
+  width: 60%;
+}
+
+.main1 .swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+
+.main1 .swiper-slide:nth-child(3n) {
+  width: 20%;
+}
